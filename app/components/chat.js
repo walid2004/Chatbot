@@ -6,8 +6,7 @@ const bg2 = () => {
   return (
     <div >
         <form>
-            <input type = 'text' autoFocus style={{display:'flex', 
-              justifyContent:'flex-end'}}>
+            <input type = 'text' autoFocus >
               </input>
               <div className='sendingbutton'>
               <motion.div animate={{
