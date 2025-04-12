@@ -11,11 +11,11 @@ const Switcher = () => {
         justifyContent: "flex-" + ( isOn ? "start" : "end"),
             marginLeft:'43%',
             width: 100,
-            height: 50,
+            height: 30,
             borderRadius: 50,
             cursor: "pointer",
             display: "flex",
-            padding: 10,
+            padding: 0,
             marginTop: 50
     }} onClick={toggler}>{
         <motion.div

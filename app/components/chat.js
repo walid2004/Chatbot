@@ -9,16 +9,20 @@ const bg2 = () => {
             <input type = 'text' autoFocus style={{display:'flex', 
               justifyContent:'flex-end'}}>
               </input>
-              <motion.div style={{
-                height:'40px',
-                width:'40px',
-                backgroundColor:'#1edefe',
-                zIndex:'4',
-                cursor:'pointer',
-                borderRadius:50
+              <div className='sendingbutton'>
+              <motion.div animate={{
+                scale:[1.2,1,1.2,1.2],
+                rotate:[0,-40,0,-30,0],
+                ease: 'easeInOut',
+              }}
+              transition={{
+                ase: 'easeInOut',
+                repeat: Infinity,
+                duration: 3, times: [1, 1, 1]
               }}>
                 <IoIosSend size={30} color='white' style={{padding:'5'}}/>
               </motion.div>
+              </div>
         </form>
     </div>
   )
