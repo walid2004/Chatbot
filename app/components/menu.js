@@ -32,14 +32,25 @@ const Menu = () => {
     <motion.div
       key={isOpen ? 'close' : 'menu'}
       initial={{ scale: 0.8, rotate: 0, opacity: 0 }}
-      animate={{ scale: 1, rotate: isOpen ? 45 : 0, opacity: 1 }}
+      animate={{ scale: 1, rotate: isOpen ? 90 : 0, opacity: 1 }}
       exit={{ scale: 0.8, rotate: 0, opacity: 0 }}
       transition={{ duration: 0.3 }}
       style={{ display: 'inline-block' }}
     >
       {isOpen ? <IoClose size={50} /> : <IoMenu size={50} />}
     </motion.div>
-    {isOpen && <Navbar />}
+    {isOpen&&
+    <motion.div 
+    initial={{ scale: 0.8, rotate: 0, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+    exit={{ scale: 0.8, rotate: 0, opacity: 0 }}
+    transition={{ ease:'backInOut',duration: 0.3 }}
+    style={{ display: 'inline-block' }}> 
+        <Navbar />
+    </motion.div>
+    }
+    
+    
   </div>
   )
 }

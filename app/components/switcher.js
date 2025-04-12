@@ -6,7 +6,7 @@ const Switcher = () => {
     const toggler = ()=>setIsOn(!isOn)
 
   return (
-    <button style={{
+    <button className='modeswtich' style={{
         position:'relative',        display:'flex',
         justifyContent: "flex-" + ( isOn ? "start" : "end"),
             marginLeft:'43%',
@@ -23,7 +23,7 @@ const Switcher = () => {
             height:'30px',
             width:'30px',
             borderRadius:'50%',
-            backgroundColor:'black',
+            backgroundColor:'#1edefe',
             borderWidth:'0px',
             borderColor:'white'
             , marginBottom:'20px'

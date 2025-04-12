@@ -48,9 +48,9 @@ ul {
     border-radius: 20;
     width: 50%;
     margin-left: 25%;
-    height: 30px;
+    height: 40px;
     margin-top: 30%;
-    border-width: 0;
+    border-width: 0px;
 
   }
   .bruh{
@@ -58,6 +58,16 @@ ul {
   }
 
   h1{
+    font-family: "Black Ops One", system-ui;
+    font-weight: 900;
+    font-style: italic;       
+    color: #ffffff;
+    text-align: center;
+    font-size: 90px;
+  }
+  h2{
+    font-family: "Black Ops One", system-ui;
+    font-style: italic;       
     color: #ffffff;
     text-align: center;
   }

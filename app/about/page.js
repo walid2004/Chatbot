@@ -2,7 +2,9 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>about</div>
+    <div style={{color:'white'}}>
+      <p>Car</p>
+    </div>
   )
 }
 

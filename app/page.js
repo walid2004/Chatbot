@@ -1,5 +1,5 @@
 export default function Page() {
-    return <h1>Welcomeghnd to My Page!</h1>;
+    return <h2>Pick your car with the help of Ai</h2>;
     
   }
   
